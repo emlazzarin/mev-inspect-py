@@ -10,6 +10,7 @@ COMPOUND_V2_SPECS = [
         protocol=Protocol.compound_v2,
         classifications={
             "liquidateBorrow(address,address)": Classification.liquidate,
+            "seize(address,address,uint256)": Classification.liquidate,
         },
     ),
     ClassifierSpec(
@@ -17,6 +18,7 @@ COMPOUND_V2_SPECS = [
         protocol=Protocol.compound_v2,
         classifications={
             "liquidateBorrow(address,uint256,address)": Classification.liquidate,
+            "seize(address,address,uint256)": Classification.liquidate,
         },
     ),
 ]
